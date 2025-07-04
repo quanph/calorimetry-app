@@ -13,7 +13,6 @@ st.markdown("""
     - Giai đoạn CD: sau phản ứng
 - Thêm cột `phase` có giá trị là AB, BC hoặc CD để phân loại
 """)
-uploaded_file = st.file_uploader("Tải lên file Excel", type=["xlsx"])
 
 # Upload file Excel
 uploaded_file = st.file_uploader("Tải lên file Excel chứa dữ liệu (có cột: time, temperature, phase)", type=["xlsx"])
