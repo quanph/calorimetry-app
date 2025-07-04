@@ -3,7 +3,17 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.title("Xác định ΔT bằng phương pháp đồ thị")
+st.title("Xác định ΔT bằng phương pháp đồ thị (nhiệt lượng kế)")
+st.markdown("""
+### Nhập dữ liệu bằng Excel:
+- Tải lên file Excel gồm 2 cột: `time` và `temperature`
+- Ghi rõ các giai đoạn:
+    - Giai đoạn AB: trước phản ứng
+    - Giai đoạn BC: trong phản ứng
+    - Giai đoạn CD: sau phản ứng
+- Thêm cột `phase` có giá trị là AB, BC hoặc CD để phân loại
+""")
+uploaded_file = st.file_uploader("Tải lên file Excel", type=["xlsx"])
 
 # Upload file Excel
 uploaded_file = st.file_uploader("Tải lên file Excel chứa dữ liệu (có cột: time, temperature, phase)", type=["xlsx"])
